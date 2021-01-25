@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" / >
+        <title> Page Title </title>
+        <link rel = "stylesheet" href = "../styles.css">
+    </head>
+<body>
+
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+
+                    <div class="nav-link-wrapper">
+                        <a href="../index.html">WILLIAM ON</a>
+                    
+                    </div>
+
+                </div>
+
+                <div class="right-side">
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="about.html">About Me</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <div class="dropdown">
+                        <a href="../projects.html">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="https://github.com/William0n/Animal-Crossing-Reviews">Sentiment Analysis on Animal Crossing Reviews</a>
+                            <a href="https://github.com/William0n/Cats-and-Dog">CNNs: Dogs Vs Cats</a>
+                            <a href="https://github.com/William0n/Tesla-Stock-Prediction">Tesla Stock Predictions</a>
+                            <a href="https://github.com/William0n/Pendulum-Project">Pendulum Factorial Design</a>
+                            <a href="https://github.com/William0n/Analysis-on-student-gaming-preferences">Analysis on Student Gaming Preferences</a>
+                            <a href="https://github.com/William0n/Heart-Disease-Analysis-">Heart Disease Analysis</a>
+                            <a href="https://github.com/William0n/f_mnist">Fashion MNIST Classifier</a>
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="nav-link-wrapper">
+                        <div class="dropdown">
+                        <a href="../visualizations.html">Tableau Viz</a>
+                        <div class="dropdown-content">
+                            <a href="https://public.tableau.com/views/movieprofits/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link">Movie Profits</a>
+                            <a href="https://public.tableau.com/views/shelters_16080592786680/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link">Shelters</a>
+                            <a href="https://public.tableau.com/views/windturbine/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link">Wind Turbines</a>
+                            <a href="https://public.tableau.com/views/ikea_16057288290090/Sheet1?:language=en&:display_count=y&:origin=viz_share_link">Ikea Furniture</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    
+                    <div class="nav-link-wrapper">
+                        <a href="../contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+
+            <header class = "top-cover" style="background-image: url(../images/about.png);">
+
+            </header>
+                
+        <div class="content-wrapper">
+
+            <div class="profile-dp">
+                <img src="../images/display.png" alt="" height="375" width="375">
+            </div>
+           <div class="me-text">
+               As a soon-to be graduate of the University of Toronto, I am always striving<br> 
+               to improve and expand upon my current knowledge in data analytics/science. During <br>
+               my time at the university, I majored in Statistics while double minoring in <br>
+               Mathematics and Economics. I have experience using R, Python, and MySQL;<br> in addition,
+               I am also familiar with creating visualizations on Tableau. When I'm<br> not working on my projects,
+               I enjoy exploring the city and finding the next best<br>location for cheap eats. 
+               I hope you enjoy browsing through my portfolio. <br><i> I can be reached by email at william.on@live.ca </i> <br>
+               
+
+           </div>
+        </div> 
+    </div>
+
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

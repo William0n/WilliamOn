@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8" / >
+        <title> Page Title </title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+<body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">WILLIAM ON</a>
+                    
+                    </div>
+
+                </div>
+
+                <div class="right-side">
+                    <div class="nav-link-wrapper">
+                        <a href="about me/about.html">About Me</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <div class="dropdown">
+                        <a href="projects.html">Projects</a>
+                        <div class="dropdown-content">
+                            <a href="https://github.com/William0n/Animal-Crossing-Reviews">Sentiment Analysis on Animal Crossing Reviews</a>
+                            <a href="https://github.com/William0n/Cats-and-Dog">CNNs: Dogs Vs Cats</a>
+                            <a href="https://github.com/William0n/Tesla-Stock-Prediction">Tesla Stock Predictions</a>
+                            <a href="https://github.com/William0n/Pendulum-Project">Pendulum Factorial Design</a>
+                            <a href="https://github.com/William0n/Analysis-on-student-gaming-preferences">Analysis on Student Gaming Preferences</a>
+                            <a href="https://github.com/William0n/Heart-Disease-Analysis-">Heart Disease Analysis</a>
+                            <a href="https://github.com/William0n/f_mnist">Fashion MNIST Classifier</a>
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="nav-link-wrapper active-nav-link">
+                        <div class="dropdown">
+                        <a href="visualizations.html">Tableau Viz</a>
+                        <div class="dropdown-content">
+                            <a href="https://public.tableau.com/views/movieprofits/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link">Movie Profits</a>
+                            <a href="https://public.tableau.com/views/shelters_16080592786680/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link">Shelters</a>
+                            <a href="https://public.tableau.com/views/windturbine/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link">Wind Turbines</a>
+                            <a href="https://public.tableau.com/views/ikea_16057288290090/Sheet1?:language=en&:display_count=y&:origin=viz_share_link">Ikea Furniture</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    
+                    <div class="nav-link-wrapper">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <header class = "top-cover-home" style="background-image: url(images/main.png);">
+                <div class="background-black-60">
+                    <div class="title-cover-names">
+                        <h1 class ="main-title"> VISUALIZATIONS</h1>
+                    </div>
+                </div>
+            </header>
+
+        <div class="content-wrapper">
+
+            <div class="page-ov">
+            <p>Welcome to my Tableau visualizations page! Hover over any picture to <br>
+                get a brief description of the project, and click on the description <br> to be redirected to its 
+                Tableau Public repository</p>
+            </div>
+
+
+            <div class="visualization-items-wrapper">
+            
+                <div class="portfolio-item-wrapper">
+                    <div class = "portfolio-img-background" style="background-image:url(images/moviev.PNG)" div></div> 
+                    
+                    <div class="image-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://public.tableau.com/views/movieprofits/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link"> 
+                        Movie Profits <br><br>  Have you ever wondered which movie genres were the most profitable? Check out this visualization to see if your favourite 
+                        movie genre made a profit</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class = "portfolio-img-background" style="background-image:url(images/shelterv.PNG)" div></div> 
+                    
+                    <div class="image-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://public.tableau.com/views/shelters_16080592786680/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link"> 
+                            Shelters <br><br> As Toronto housing prices continue to soar higher, some people will be forced to live in shelters. Explore this visualization to learn
+                            more about shelter occupancies and capacities in Toronto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class = "portfolio-img-background" style="background-image:url(images/turbinev.PNG)" div></div> 
+                    
+                    <div class="image-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://public.tableau.com/views/windturbine/Dashboard1?:language=en&:display_count=y&:origin=viz_share_link"> 
+                    Canadian Wind Turbines <br><br>   With an increasing demand for energy, it is important that we pay more attention to greener options of energy
+                    production. Check out this visualization to learn more about wind turbines in Canada. </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class = "portfolio-img-background" style="background-image:url(images/ikeav.PNG)" div></div> 
+                    
+                    <div class="image-text-wrapper">
+                        <div class="subtitle">
+                            <a href="https://public.tableau.com/views/ikea_16057288290090/Sheet1?:language=en&:display_count=y&:origin=viz_share_link"> 
+                            IKEA Furniture <br><br> Do you ever go IKEA shopping and wonder what type of items cost the most? Take a look
+                            at these visualizations to learn more about IKEA items</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div> 
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
